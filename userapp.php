@@ -9,7 +9,7 @@ echo $_SESSION['login'];     //通过session码记录的值 来   输出用户�
 echo "<br/><br/><br/>";           // PHP的隔段
 echo "你的文件有:<br/>";
 $filedir="./upload/".$_SESSION['login']."/.";     //  11~20行的代码都是为了 让人看见自己存了啥文件   如果没有过文件  那就会报错 会直接跳过
-if($filedir!=0)
+if($filedir!="")
 {
 $dir=dirname($filedir);
 $ss=scandir($dir);
